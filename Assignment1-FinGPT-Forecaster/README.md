@@ -32,7 +32,7 @@ By the end of this project, you will have gained practical experience in:
 
 # Resources
 * Code Repository: [FinGPT-Forecaster](https://github.com/AI4Finance-Foundation/FinGPT/tree/master/fingpt/FinGPT_Forecaster)
-* Data: [Dow30](FinGPT/fingpt-forecaster-dow30-202305-202405)
+* Data: [Dow30](https://huggingface.co/datasets/FinGPT/fingpt-forecaster-dow30-202305-202405)
 * Base Model: [llama-3.1-8b](https://huggingface.co/meta-llama/Llama-3.1-8B), [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
 * Medium Blog: [Medium Blog](https://medium.com/@ll3713/the-road-to-fingpt-instructive-fine-tuned-market-forecaster-cfe7cbf9038b)
 * Demo Platform: [Demo on HuggingFace](https://huggingface.co/spaces/FinGPT/FinGPT-Forecaster)
