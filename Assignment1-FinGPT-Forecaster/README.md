@@ -16,7 +16,7 @@ In this assignment, students will engage with the FinGPT-Forecaster, a state-of-
 * Set up and execute the FinGPT-Forecaster code using provided datasets.
 * Document the process and any issues encountered during the execution.
 2.	Model Comparison
-* Load and run both the Llama3-8b and DeepSeek-R1-Distill-Llama-8B models.
+* Load, run, and LoRA fine-tune both the Llama3-8b and DeepSeek-R1-Distill-Llama-8B models.
 * Use the same input data for both models to ensure a fair comparison of results.
 3.	Results Analysis
 * Evaluate and compare the models based on predefined metrics such as predictive accuracy and response time.
@@ -33,7 +33,7 @@ By the end of this project, you will have gained practical experience in:
 # Resources
 * Code Repository: [FinGPT-Forecaster](https://github.com/AI4Finance-Foundation/FinGPT/tree/master/fingpt/FinGPT_Forecaster)
 * Data: [Dow30](FinGPT/fingpt-forecaster-dow30-202305-202405)
-* Base Model: [llama-3.1-8b](https://huggingface.co/meta-llama/Llama-3.1-8B)
+* Base Model: [llama-3.1-8b](https://huggingface.co/meta-llama/Llama-3.1-8B), [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
 * Medium Blog: [Medium Blog](https://medium.com/@ll3713/the-road-to-fingpt-instructive-fine-tuned-market-forecaster-cfe7cbf9038b)
 * Demo Platform: [Demo on HuggingFace](https://huggingface.co/spaces/FinGPT/FinGPT-Forecaster)
 * GPU Resources: Find a GPU service by yourself like Google Colab Pro ($10/month) for model training and development.
