@@ -24,7 +24,7 @@ By the end of this project, you will have gained practical experience in:
 * Developing an AI-driven solution for real-world financial applications.
 
 Tools and Resources
- • Code Repository: [FinGPT-Forecaster](https://github.com/AI4Finance-Foundation/FinGPT/tree/master/fingpt/FinGPT_Forecaster)
- • Medium Blog: [Medium Blog](https://medium.com/@ll3713/the-road-to-fingpt-instructive-fine-tuned-market-forecaster-cfe7cbf9038b)
- • Demo Platform: [Demo on HuggingFace](https://huggingface.co/spaces/FinGPT/FinGPT-Forecaster)
- • GPU Resources: Find a GPU service by yourself like Google Colab Pro ($10/month) for model training and development.
+* Code Repository: [FinGPT-Forecaster](https://github.com/AI4Finance-Foundation/FinGPT/tree/master/fingpt/FinGPT_Forecaster)
+* Medium Blog: [Medium Blog](https://medium.com/@ll3713/the-road-to-fingpt-instructive-fine-tuned-market-forecaster-cfe7cbf9038b)
+* Demo Platform: [Demo on HuggingFace](https://huggingface.co/spaces/FinGPT/FinGPT-Forecaster)
+* GPU Resources: Find a GPU service by yourself like Google Colab Pro ($10/month) for model training and development.
