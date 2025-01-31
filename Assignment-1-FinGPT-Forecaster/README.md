@@ -50,4 +50,8 @@ By the end of this project, you will have gained practical experience in:
 2. Depth of analysis in comparing the models.
 3. Clarity and professionalism in reporting.
 
+# Group and Deadline
+* Group: Students may work in groups of up to 3 people.
+* Deadline: All submissions must be completed by February 28, 2025.
+
 This assignment is designed to introduce students to the complexities of working with large-scale AI models in finance and to foster a practical understanding of how different AI technologies can impact financial analysis outcomes.
