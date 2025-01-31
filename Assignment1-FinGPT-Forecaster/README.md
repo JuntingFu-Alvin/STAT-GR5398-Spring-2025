@@ -39,7 +39,7 @@ By the end of this project, you will have gained practical experience in:
 * GPU Resources: Find a GPU service by yourself like Google Colab Pro ($10/month) for model training and development.
 
 # Submission Requirements
-* Write a Medium Blog that contains:
+## Write a Medium Blog that contains:
 1. Setup and execution process descriptions.
 2. Comparative analysis of the two models.
 3. Visuals illustrating key findings.
