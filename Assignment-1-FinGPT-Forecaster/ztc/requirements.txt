@@ -1,0 +1,15 @@
+torch
+mpi4py
+transformers==4.48.1
+accelerate==1.3.0
+peft==0.9.0
+pandas
+yfinance==0.2.50
+finnhub-python
+nvidia-ml-py3
+mpi4py
+deepspeed
+openai
+datasets
+rouge-score
+bitsandbytes  
