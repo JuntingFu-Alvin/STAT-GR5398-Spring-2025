@@ -1,0 +1,64 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "fingpt-forecaster-dow30-202305-202405-llama3-instruct",
+  "dataset_size": 11988519,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/SimonLiao/fingpt-forecaster-dow30-202305-202405-llama3-Instruct@f15e98702bdd8891f8d92654834f759a74b1cd82/data/train-00000-of-00001.parquet": {
+      "num_bytes": 4386767,
+      "checksum": null
+    },
+    "hf://datasets/SimonLiao/fingpt-forecaster-dow30-202305-202405-llama3-Instruct@f15e98702bdd8891f8d92654834f759a74b1cd82/data/test-00000-of-00001.parquet": {
+      "num_bytes": 1038558,
+      "checksum": null
+    }
+  },
+  "download_size": 5425325,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "period": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "symbol": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 17413844,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 9664966,
+      "num_examples": 1224,
+      "dataset_name": "fingpt-forecaster-dow30-202305-202405-llama3-instruct"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 2323553,
+      "num_examples": 306,
+      "dataset_name": "fingpt-forecaster-dow30-202305-202405-llama3-instruct"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
