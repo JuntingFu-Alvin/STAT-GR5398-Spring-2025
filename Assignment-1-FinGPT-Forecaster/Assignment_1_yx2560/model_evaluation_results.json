@@ -1,0 +1,389 @@
+{
+  "config": {
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "INTC",
+      "NVDA",
+      "GOOGL"
+    ],
+    "models": [
+      "Meta-Llama-3.1-8B",
+      "DeepSeek-R1-Distill-Llama-8B"
+    ],
+    "end_date": "2024-01-15",
+    "weeks_history": 3
+  },
+  "model_metrics": [
+    {
+      "model_name": "Meta-Llama-3.1-8B",
+      "load_time": 12.232742547988892,
+      "memory_usage": 211.30078125,
+      "inference_times": [
+        8.689770698547363,
+        1.0230705738067627,
+        19.177813291549683,
+        1.0862560272216797,
+        3.503551959991455
+      ],
+      "token_speeds": [
+        11.296024096614003,
+        10.811683101496007,
+        11.485809603008251,
+        11.106914175250907,
+        11.44327066659655
+      ],
+      "token_counts": [
+        98,
+        11,
+        220,
+        12,
+        40
+      ],
+      "predictions": [
+        {
+          "symbol": "AAPL",
+          "input_tokens": 849,
+          "output_tokens": 98,
+          "tokenization_time": 0.004248857498168945,
+          "generation_time": 8.675618886947632,
+          "decoding_time": 0.0099029541015625,
+          "total_inference_time": 8.689770698547363,
+          "tokens_per_second": 11.296024096614003,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The recent increase in the company\u2019s stock price could indicate that investors are optimistic about Apple's growth prospects.\n2. Apple's ability to maintain strong gross margins at 49.41% signals robust profitability despite high operational costs.\n\n[Potential Concerns]:\n1. In the past three months, the company's stock price experienced significant volatility, which might discourage some investors from investing.\n2. Recent reports about the company facing competition from other smartphone manufacturers like",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "MSFT",
+          "input_tokens": 844,
+          "output_tokens": 11,
+          "tokenization_time": 0.003826141357421875,
+          "generation_time": 1.0174179077148438,
+          "decoding_time": 0.0018265247344970703,
+          "total_inference_time": 1.0230705738067627,
+          "tokens_per_second": 10.811683101496007,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The acquisition of",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "INTC",
+          "input_tokens": 859,
+          "output_tokens": 220,
+          "tokenization_time": 0.0038461685180664062,
+          "generation_time": 19.154069900512695,
+          "decoding_time": 0.0198972225189209,
+          "total_inference_time": 19.177813291549683,
+          "tokens_per_second": 11.485809603008251,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The company's strong presence in the semiconductor industry shows a promising outlook.\n2. Its robust financial ratios, like its high asset turnover ratio, cash ratio, current ratio, gross margin, inventory turnover ratio, quick ratio, return on assets, and return on equity show that it can effectively manage its resources.\n\n[Potential Concerns]:\n1. Decreasing stock prices over the last month signal that investors may not be confident about future performance.\n2. A significant decrease in the company\u2019s book value could indicate financial issues or potential debt-related problems.\n\n[Prediction & Analysis]:\n Prediction: Down by around 1%\nAnalysis: Despite several positive developments, such as their stronghold in the semiconductor industry and solid financial management, there are some concerning signs like declining stock prices and decreasing book values. Therefore, it seems that the market might have lost confidence in the company's growth potential and this might lead to a slight decline in the stock price for the upcoming week. However, given these developments and the company's overall strength, it might bounce back in the long term.",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "NVDA",
+          "input_tokens": 861,
+          "output_tokens": 12,
+          "tokenization_time": 0.004079341888427734,
+          "generation_time": 1.0804080963134766,
+          "decoding_time": 0.0017685890197753906,
+          "total_inference_time": 1.0862560272216797,
+          "tokens_per_second": 11.106914175250907,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The company released a",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "GOOGL",
+          "input_tokens": 848,
+          "output_tokens": 40,
+          "tokenization_time": 0.0037038326263427734,
+          "generation_time": 3.495504140853882,
+          "decoding_time": 0.004343986511230469,
+          "total_inference_time": 3.503551959991455,
+          "tokens_per_second": 11.44327066659655,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The company\u2019s stock price went up by 2.79% from January 8th to 15th.\n2. The company is expanding its presence in",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        }
+      ]
+    },
+    {
+      "model_name": "DeepSeek-R1-Distill-Llama-8B",
+      "load_time": 10.872219562530518,
+      "memory_usage": 135.05078125,
+      "inference_times": [
+        29.123304843902588,
+        19.574039459228516,
+        0.14998388290405273,
+        28.96423363685608,
+        1.2767398357391357
+      ],
+      "token_speeds": [
+        11.505008539802054,
+        11.508346955810737,
+        6.885909698348749,
+        11.569717603793572,
+        11.016487136731419
+      ],
+      "token_counts": [
+        335,
+        225,
+        1,
+        335,
+        14
+      ],
+      "predictions": [
+        {
+          "symbol": "AAPL",
+          "input_tokens": 846,
+          "output_tokens": 335,
+          "tokenization_time": 0.003970623016357422,
+          "generation_time": 29.117753267288208,
+          "decoding_time": 0.001580953598022461,
+          "total_inference_time": 29.123304843902588,
+          "tokens_per_second": 11.505008539802054,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The recent increase in the stock price indicates strong investor confidence.\n2. With a market cap of $371 million, the company\u2019s size provides it significant influence and robust financial backing.\n3. The company\u2019s ability to consistently generate earnings despite the current economic challenges could indicate good business strategy and financial health.\n\n[Potential Concerns]:\n1. The fluctuation in stock prices over the last few weeks suggests volatility and may affect investor sentiment.\n2. The high ratio of total debt to equity (0.0382) and total debt to total asset (0.0207) indicates that the company is heavily reliant on external funding, which poses a risk if market conditions change.\n3. The relatively low operating margin (0.1201) compared to other sectors suggests lower profitability.\n\n[Prediction & Analysis]:\nPrediction: Up by more than 0%\nAnalysis: Despite the potential concerns regarding the company's financial stability and market volatility, I predict that the stock price will experience a slight rise in the upcoming week due to several positive developments. Specifically, the recent surge in the stock price reflects a strong show of investor confidence, indicating a favorable trend towards the company. Additionally, the company\u2019s market position and financial backing suggest a capability to weather any immediate financial storm.\n\nHowever, investors must remain cautious about the company's high debt ratios and low operating margins. These factors are likely to impact future performance and potentially pose risks for long-term growth.\n\nIn conclusion, while the current market situation and company-specific financial issues present both challenges and opportunities, I am cautiously optimistic about the upcoming week's potential for the stock price, predicting a minor increase.",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "MSFT",
+          "input_tokens": 841,
+          "output_tokens": 225,
+          "tokenization_time": 0.003947734832763672,
+          "generation_time": 19.551026821136475,
+          "decoding_time": 0.019064903259277344,
+          "total_inference_time": 19.574039459228516,
+          "tokens_per_second": 11.508346955810737,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The recent stock price increase from 371.91 to 385.59 indicates strong investor confidence.\n2. The company's financial stability as evidenced by cash ratio, current ratio, and net margin suggests healthy growth.\n3. Microsoft's leadership in technology will help it adapt to future changes in the market.\n\n[Potential Concerns]:\n1. The company's gross margin is high at 0.7232, which may imply a cost-cutting strategy.\n2. The low EBIT per share ratio (0.0062) indicates lower profitability per share.\n3. The total debt to equity ratio is 0.0452, suggesting that the company might rely heavily on borrowing for growth. \n\n[Prediction & Analysis]:\nPrediction: Up by less than 1% \nAnalysis: Despite some concerns regarding cost-cutting strategies and heavy reliance on borrowing, the overall market sentiment seems optimistic given the rise in stock price. Given the company's solid financial ratios and strong market position, it's expected that the stock price would continue to show an upward trend in the coming week.",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "INTC",
+          "input_tokens": 856,
+          "output_tokens": 1,
+          "tokenization_time": 0.0037384033203125,
+          "generation_time": 0.14522409439086914,
+          "decoding_time": 0.0010213851928710938,
+          "total_inference_time": 0.14998388290405273,
+          "tokens_per_second": 6.885909698348749,
+          "prediction_direction": "Unknown",
+          "response": "",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "NVDA",
+          "input_tokens": 858,
+          "output_tokens": 335,
+          "tokenization_time": 0.0037207603454589844,
+          "generation_time": 28.954898595809937,
+          "decoding_time": 0.005614280700683594,
+          "total_inference_time": 28.96423363685608,
+          "tokens_per_second": 11.569717603793572,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. NVDA's stock price has shown consistent growth over the past few weeks.\n2. NVDA's strong financial performance is reflected in its high current ratio, indicating good short-term liquidity.\n3. The company has been consistently ranked highly among companies with the highest return on equity (ROE) and return on investment (ROI), reflecting good management practices.\n\n[Potential Concerns]:\n1. NVDA's negative profit per share (EPS) indicates a possible lack of profitability.\n2. The company's high total debt to total asset ratio shows significant reliance on debt financing.\n3. A relatively low gross margin suggests that cost structures might not be optimised.\n\n[Prediction & Analysis]:\nPrediction: Up by around 2%\nAnalysis: Despite some potential concerns, it seems that NVDA's recent upward trend in stock prices reflects investor confidence in the company's long-term growth potential and strong financial structure. The company's ability to maintain a high current ratio indicates its capability to meet short-term obligations. Additionally, its strong rankings in ROE and ROI reflect effective management and efficient use of resources. \n\nOn the other hand, issues such as the negative EPS, high total debt ratios, and lower gross margins could potentially impact NVDA's overall performance and stock price. However, these issues may not necessarily result in a sharp decline in the near term, especially considering the company's strong fundamentals and positive market sentiment.\n\nTherefore, based on the available information, predicting a slight increase of approximately 2% in NVDA's stock price for the upcoming week appears reasonable, provided no major external events or economic shifts occur which could affect the market negatively.",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        },
+        {
+          "symbol": "GOOGL",
+          "input_tokens": 845,
+          "output_tokens": 14,
+          "tokenization_time": 0.003947019577026367,
+          "generation_time": 1.270822525024414,
+          "decoding_time": 0.0019702911376953125,
+          "total_inference_time": 1.2767398357391357,
+          "tokens_per_second": 11.016487136731419,
+          "prediction_direction": "Up",
+          "response": "[Positive Developments]:\n1. The recent increase in GOO",
+          "actual_direction": "Error",
+          "actual_percent_change": 0.0
+        }
+      ]
+    }
+  ],
+  "prediction_results": [
+    {
+      "model": "Meta-Llama-3.1-8B",
+      "symbol": "AAPL",
+      "input_tokens": 849,
+      "output_tokens": 98,
+      "tokenization_time": 0.004248857498168945,
+      "generation_time": 8.675618886947632,
+      "decoding_time": 0.0099029541015625,
+      "total_inference_time": 8.689770698547363,
+      "tokens_per_second": 11.296024096614003,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The recent increase in the company\u2019s stock price could indicate that investors are optimistic about Apple's growth prospects.\n2. Apple's ability to maintain strong gross margins at 49.41% signals robust profitability despite high operational costs.\n\n[Potential Concerns]:\n1. In the past three months, the company's stock price experienced significant volatility, which might discourage some investors from investing.\n2. Recent reports about the company facing competition from other smartphone manufacturers like",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "Meta-Llama-3.1-8B",
+      "symbol": "MSFT",
+      "input_tokens": 844,
+      "output_tokens": 11,
+      "tokenization_time": 0.003826141357421875,
+      "generation_time": 1.0174179077148438,
+      "decoding_time": 0.0018265247344970703,
+      "total_inference_time": 1.0230705738067627,
+      "tokens_per_second": 10.811683101496007,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The acquisition of",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "Meta-Llama-3.1-8B",
+      "symbol": "INTC",
+      "input_tokens": 859,
+      "output_tokens": 220,
+      "tokenization_time": 0.0038461685180664062,
+      "generation_time": 19.154069900512695,
+      "decoding_time": 0.0198972225189209,
+      "total_inference_time": 19.177813291549683,
+      "tokens_per_second": 11.485809603008251,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The company's strong presence in the semiconductor industry shows a promising outlook.\n2. Its robust financial ratios, like its high asset turnover ratio, cash ratio, current ratio, gross margin, inventory turnover ratio, quick ratio, return on assets, and return on equity show that it can effectively manage its resources.\n\n[Potential Concerns]:\n1. Decreasing stock prices over the last month signal that investors may not be confident about future performance.\n2. A significant decrease in the company\u2019s book value could indicate financial issues or potential debt-related problems.\n\n[Prediction & Analysis]:\n Prediction: Down by around 1%\nAnalysis: Despite several positive developments, such as their stronghold in the semiconductor industry and solid financial management, there are some concerning signs like declining stock prices and decreasing book values. Therefore, it seems that the market might have lost confidence in the company's growth potential and this might lead to a slight decline in the stock price for the upcoming week. However, given these developments and the company's overall strength, it might bounce back in the long term.",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "Meta-Llama-3.1-8B",
+      "symbol": "NVDA",
+      "input_tokens": 861,
+      "output_tokens": 12,
+      "tokenization_time": 0.004079341888427734,
+      "generation_time": 1.0804080963134766,
+      "decoding_time": 0.0017685890197753906,
+      "total_inference_time": 1.0862560272216797,
+      "tokens_per_second": 11.106914175250907,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The company released a",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "Meta-Llama-3.1-8B",
+      "symbol": "GOOGL",
+      "input_tokens": 848,
+      "output_tokens": 40,
+      "tokenization_time": 0.0037038326263427734,
+      "generation_time": 3.495504140853882,
+      "decoding_time": 0.004343986511230469,
+      "total_inference_time": 3.503551959991455,
+      "tokens_per_second": 11.44327066659655,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The company\u2019s stock price went up by 2.79% from January 8th to 15th.\n2. The company is expanding its presence in",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Llama-8B",
+      "symbol": "AAPL",
+      "input_tokens": 846,
+      "output_tokens": 335,
+      "tokenization_time": 0.003970623016357422,
+      "generation_time": 29.117753267288208,
+      "decoding_time": 0.001580953598022461,
+      "total_inference_time": 29.123304843902588,
+      "tokens_per_second": 11.505008539802054,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The recent increase in the stock price indicates strong investor confidence.\n2. With a market cap of $371 million, the company\u2019s size provides it significant influence and robust financial backing.\n3. The company\u2019s ability to consistently generate earnings despite the current economic challenges could indicate good business strategy and financial health.\n\n[Potential Concerns]:\n1. The fluctuation in stock prices over the last few weeks suggests volatility and may affect investor sentiment.\n2. The high ratio of total debt to equity (0.0382) and total debt to total asset (0.0207) indicates that the company is heavily reliant on external funding, which poses a risk if market conditions change.\n3. The relatively low operating margin (0.1201) compared to other sectors suggests lower profitability.\n\n[Prediction & Analysis]:\nPrediction: Up by more than 0%\nAnalysis: Despite the potential concerns regarding the company's financial stability and market volatility, I predict that the stock price will experience a slight rise in the upcoming week due to several positive developments. Specifically, the recent surge in the stock price reflects a strong show of investor confidence, indicating a favorable trend towards the company. Additionally, the company\u2019s market position and financial backing suggest a capability to weather any immediate financial storm.\n\nHowever, investors must remain cautious about the company's high debt ratios and low operating margins. These factors are likely to impact future performance and potentially pose risks for long-term growth.\n\nIn conclusion, while the current market situation and company-specific financial issues present both challenges and opportunities, I am cautiously optimistic about the upcoming week's potential for the stock price, predicting a minor increase.",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Llama-8B",
+      "symbol": "MSFT",
+      "input_tokens": 841,
+      "output_tokens": 225,
+      "tokenization_time": 0.003947734832763672,
+      "generation_time": 19.551026821136475,
+      "decoding_time": 0.019064903259277344,
+      "total_inference_time": 19.574039459228516,
+      "tokens_per_second": 11.508346955810737,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The recent stock price increase from 371.91 to 385.59 indicates strong investor confidence.\n2. The company's financial stability as evidenced by cash ratio, current ratio, and net margin suggests healthy growth.\n3. Microsoft's leadership in technology will help it adapt to future changes in the market.\n\n[Potential Concerns]:\n1. The company's gross margin is high at 0.7232, which may imply a cost-cutting strategy.\n2. The low EBIT per share ratio (0.0062) indicates lower profitability per share.\n3. The total debt to equity ratio is 0.0452, suggesting that the company might rely heavily on borrowing for growth. \n\n[Prediction & Analysis]:\nPrediction: Up by less than 1% \nAnalysis: Despite some concerns regarding cost-cutting strategies and heavy reliance on borrowing, the overall market sentiment seems optimistic given the rise in stock price. Given the company's solid financial ratios and strong market position, it's expected that the stock price would continue to show an upward trend in the coming week.",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Llama-8B",
+      "symbol": "INTC",
+      "input_tokens": 856,
+      "output_tokens": 1,
+      "tokenization_time": 0.0037384033203125,
+      "generation_time": 0.14522409439086914,
+      "decoding_time": 0.0010213851928710938,
+      "total_inference_time": 0.14998388290405273,
+      "tokens_per_second": 6.885909698348749,
+      "prediction_direction": "Unknown",
+      "response": "",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Llama-8B",
+      "symbol": "NVDA",
+      "input_tokens": 858,
+      "output_tokens": 335,
+      "tokenization_time": 0.0037207603454589844,
+      "generation_time": 28.954898595809937,
+      "decoding_time": 0.005614280700683594,
+      "total_inference_time": 28.96423363685608,
+      "tokens_per_second": 11.569717603793572,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. NVDA's stock price has shown consistent growth over the past few weeks.\n2. NVDA's strong financial performance is reflected in its high current ratio, indicating good short-term liquidity.\n3. The company has been consistently ranked highly among companies with the highest return on equity (ROE) and return on investment (ROI), reflecting good management practices.\n\n[Potential Concerns]:\n1. NVDA's negative profit per share (EPS) indicates a possible lack of profitability.\n2. The company's high total debt to total asset ratio shows significant reliance on debt financing.\n3. A relatively low gross margin suggests that cost structures might not be optimised.\n\n[Prediction & Analysis]:\nPrediction: Up by around 2%\nAnalysis: Despite some potential concerns, it seems that NVDA's recent upward trend in stock prices reflects investor confidence in the company's long-term growth potential and strong financial structure. The company's ability to maintain a high current ratio indicates its capability to meet short-term obligations. Additionally, its strong rankings in ROE and ROI reflect effective management and efficient use of resources. \n\nOn the other hand, issues such as the negative EPS, high total debt ratios, and lower gross margins could potentially impact NVDA's overall performance and stock price. However, these issues may not necessarily result in a sharp decline in the near term, especially considering the company's strong fundamentals and positive market sentiment.\n\nTherefore, based on the available information, predicting a slight increase of approximately 2% in NVDA's stock price for the upcoming week appears reasonable, provided no major external events or economic shifts occur which could affect the market negatively.",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    },
+    {
+      "model": "DeepSeek-R1-Distill-Llama-8B",
+      "symbol": "GOOGL",
+      "input_tokens": 845,
+      "output_tokens": 14,
+      "tokenization_time": 0.003947019577026367,
+      "generation_time": 1.270822525024414,
+      "decoding_time": 0.0019702911376953125,
+      "total_inference_time": 1.2767398357391357,
+      "tokens_per_second": 11.016487136731419,
+      "prediction_direction": "Up",
+      "response": "[Positive Developments]:\n1. The recent increase in GOO",
+      "actual_direction": "Error",
+      "actual_percent_change": 0.0
+    }
+  ],
+  "actual_movements": {
+    "AAPL": {
+      "percent_change": 0.0,
+      "direction": "Error"
+    },
+    "MSFT": {
+      "percent_change": 0.0,
+      "direction": "Error"
+    },
+    "INTC": {
+      "percent_change": 0.0,
+      "direction": "Error"
+    },
+    "NVDA": {
+      "percent_change": 0.0,
+      "direction": "Error"
+    },
+    "GOOGL": {
+      "percent_change": 0.0,
+      "direction": "Error"
+    }
+  }
+}
