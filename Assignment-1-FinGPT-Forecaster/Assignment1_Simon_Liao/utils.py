@@ -61,7 +61,7 @@ def parse_model_name(name, from_remote=False):
     elif name == 'llama2':
         return 'meta-llama/Llama-2-7b-chat-hf' # if from_remote else 'base_models/Llama-2-7b-chat-hf'
     elif name == 'llama3':
-        return 'meta-llama/Meta-Llama-3-8B' # if from_remote else 'base_models/Llama-2-7b-chat-hf'
+        return 'meta-llama/Llama-3.1-8B-Instruct' # if from_remote else 'base_models/Llama-2-7b-chat-hf'
     elif name == 'deepseekR1':
         return 'deepseek-ai/DeepSeek-R1-Distill-Llama-8B' # if from_remote else 'base_models/Llama-2-7b-chat-hf'
     else:
@@ -144,7 +144,7 @@ def calc_metrics(answers, gts):
     for answer, gt in zip(answers, gts):
         answer_dict = parse_answer(answer)
         gt_dict = parse_answer(gt)
-        
+        print(answer_dict)
         if answer_dict and gt_dict:
             for k in answer_dict.keys():
                 answers_dict[k].append(answer_dict[k])
@@ -173,4 +173,15 @@ def calc_metrics(answers, gts):
         "cons_rouge_scores": cons_rouge_scores,
         "anal_rouge_scores": anal_rouge_scores
     }
-    
+## llama3 dataset
+def extract_answer(response): 
+    match = re.search(r'<\|eot_id\|>([^<]*)$', response, re.DOTALL)
+    return match.group(1).strip() if match else None
+## deepseekR1 dataset
+def extract_last_positive_developments(text):
+    matches = list(re.finditer(r"\[Positive Developments\]", text))
+    if matches:
+        last_match = matches[-1]  # Get the last occurrence
+        return text[last_match.start():]  # Extract everything after the last match
+        print("doesn't match\n")
+    return ""  # Return empty string if no match found

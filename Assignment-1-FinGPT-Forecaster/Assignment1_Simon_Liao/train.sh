@@ -6,9 +6,9 @@ export TOKENIZERS_PARALLELISM=0
 deepspeed \
 --include localhost:0 \
 train_lora.py \
---run_name dow30v3-deepseek-5e-5lr-qkvogud \
+--run_name dow30v3-deepseek-lxy-022620-qkvogud \
 --base_model deepseekR1 \
---dataset fingpt-forecaster-dow30-202305-202405-llama3-Instruct \
+--dataset dow30-202305-202405_Deepseek_r1_8B \
 --max_length 4096 \
 --batch_size 1 \
 --gradient_accumulation_steps 16 \

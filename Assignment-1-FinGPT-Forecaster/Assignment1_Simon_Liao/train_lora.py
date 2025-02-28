@@ -28,10 +28,8 @@ from peft import (
 
 # Replace with your own api_key and project name
 os.environ['WANDB_API_KEY'] = ''    # TODO: Replace with your environment variable
-os.environ['WANDB_PROJECT'] = 'fingpt-forecaster'
-os.environ["HF_TOKEN"] = ""  # Replace with your actual Hugging Face token
-
-
+os.environ['WANDB_PROJECT'] = 'fingpt-forecaster-llama3-lxy'
+os.environ["HF_TOKEN"] = "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"  
 
 class GenerationEvalCallback(TrainerCallback):
     
@@ -54,25 +52,22 @@ class GenerationEvalCallback(TrainerCallback):
                 gt = feature['answer']
                 inputs = tokenizer(
                     prompt, return_tensors='pt',
-                    padding=False, max_length=4096 , truncation=True ## max_length=4096 add truncation = true
+                    padding=False, max_length=4096
                 )
                 inputs = {key: value.to(model.device) for key, value in inputs.items()}
                 
                 res = model.generate(
                     **inputs, 
-                    use_cache=True,
-                    pad_token_id=tokenizer.pad_token_id  # Explicitly set pad_token_id here
+                    use_cache=True
                 )
                 output = tokenizer.decode(res[0], skip_special_tokens=True)
                 answer = re.sub(r'.*\[/INST\]\s*', '', output, flags=re.DOTALL)
 
                 generated_texts.append(answer)
                 reference_texts.append(gt)
-            print("GENERATED: ", answer)
-            print("GENERATED: ", answer)
-            print("REFERENCE: ", gt)
-            # Check the length of generated texts
-            print(f"Generated texts count: {len(generated_texts)}")  # Debugging
+
+                # print("GENERATED: ", answer)
+                # print("REFERENCE: ", gt)
 
             metrics = calc_metrics(reference_texts, generated_texts)
             
@@ -99,17 +94,18 @@ def main(args):
     
     tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
-    tokenizer.pad_token_id = tokenizer.eos_token_id  # Explicitly set pad_token_id
     tokenizer.padding_side = "right"
     
     # load data
-    dataset_fname = "./data/" + args.dataset
+    #dataset_fname = "./data/" + args.dataset
+    dataset_fname =  args.dataset
     dataset_list = load_dataset(dataset_fname, args.from_remote)
-    #dataset_list = load_dataset("FinGPT/fingpt-forecaster-dow30-202305-202405")
+    
     dataset_train = datasets.concatenate_datasets([d['train'] for d in dataset_list]).shuffle(seed=42)
     
     if args.test_dataset:
-        test_dataset_fname = "./data/" + args.test_dataset
+        #test_dataset_fname = "./data/" + args.test_dataset
+        test_dataset_fname = args.test_dataset
         dataset_list = load_dataset(test_dataset_fname, args.from_remote)
             
     dataset_test = datasets.concatenate_datasets([d['test'] for d in dataset_list])
@@ -130,9 +126,7 @@ def main(args):
     formatted_time = current_time.strftime('%Y%m%d%H%M')
     
     training_args = TrainingArguments(
-        output_dir=f'fingpt-forecaster_dow30_deepseekR1_llama_8b_lora/{args.run_name}_{formatted_time}', # 保存位置
-        #output_dir=f'fingpt-forecaster_dow30_llama2-7_lora/{args.run_name}_{formatted_time}', # 保存位置
-        #output_dir=f'fingpt-forecaster_dow30_llama3-78_lora/{args.run_name}_{formatted_time}', # 保存位置
+        output_dir=f'fingpt-forecaster_dow30_llama3-8B_lora/{args.run_name}_{formatted_time}', # 保存位置
         logging_steps=args.log_interval,
         num_train_epochs=args.num_epochs,
         per_device_train_batch_size=args.batch_size,
@@ -159,7 +153,7 @@ def main(args):
     model.model_parallel = True
     model.model.config.use_cache = False
     
-    # model = prepare_model_for_kbit_training(model)
+    # model = prepare_model_for_int8_training(model)
 
     # setup peft
     peft_config = LoraConfig(
