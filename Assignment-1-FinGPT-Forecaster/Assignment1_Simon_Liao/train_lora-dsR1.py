@@ -27,9 +27,9 @@ from peft import (
 )
 
 # Replace with your own api_key and project name
-os.environ['WANDB_API_KEY'] = '8d6accf5acf5307a5a736746127a06761b171401'    # TODO: Replace with your environment variable
+os.environ['WANDB_API_KEY'] = ''    # TODO: Replace with your environment variable
 os.environ['WANDB_PROJECT'] = 'fingpt-forecaster'
-os.environ["HF_TOKEN"] = "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"  # Replace with your actual Hugging Face token
+os.environ["HF_TOKEN"] = ''  # Replace with your actual Hugging Face token
 
 def extract_last_positive_developments(text):
     matches = list(re.finditer(r"\[Positive Developments\]", text))

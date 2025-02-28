@@ -29,7 +29,7 @@ from peft import (
 # Replace with your own api_key and project name
 os.environ['WANDB_API_KEY'] = ''    # TODO: Replace with your environment variable
 os.environ['WANDB_PROJECT'] = 'fingpt-forecaster-llama3-lxy'
-os.environ["HF_TOKEN"] = "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"  
+os.environ["HF_TOKEN"] = ''  
 
 class GenerationEvalCallback(TrainerCallback):
     
