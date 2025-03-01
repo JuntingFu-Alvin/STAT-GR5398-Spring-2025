@@ -9,7 +9,7 @@ We fine-tuned and compared two models:
 
 using **Low-Rank Adaptation (LoRA)** to enhance their performance for financial applications.
 
-## 🚀 Key Findings
+## 🚀 Key Findings :
 1. **LLaMA-3.1 8B** learns **faster** and achieves **lower evaluation loss**, making it better for **risk management** and long-term financial forecasting.
 2. **DeepSeek-R1 8B** has **faster evaluation speed** and **higher binary accuracy**, making it ideal for **real-time trading and fraud detection**.
 3. **ROUGE Score Comparison**:
@@ -41,12 +41,12 @@ python llama3_dsr18b_datasetpreparation_dow30.py
 ```
 
 ### 4️⃣ Train the Models
-Run:
+Run: using train.sh to run train_lora.py and train_lora-dsR1.py for llama3 and DeepseekR1 model finetunning 
 ```sh
 bash train.sh
 ```
 
-## 🔍 Comparative Analysis
+## 🔍 Comparative Analysis:  run DeepseekR1_8B_llama3_instruct_8B_comparing.ipynb to compare the performance
 | **Metric**          | **DeepSeek-R1 8B** | **LLaMA-3.1 8B** | **Best Choice** |
 |--------------------|------------------|------------------|----------------|
 | **Train Loss**     | Slower convergence | Faster convergence | **LLaMA-3.1 8B** |
@@ -68,6 +68,7 @@ bash train.sh
 
 ## 🤝 Acknowledgments
 This project was conducted as part of the **Columbia Mentor Program**, focusing on FinGPT-based financial forecasting.
+
 
 ---
 
