@@ -46,7 +46,9 @@ Run: using train.sh to run train_lora.py and train_lora-dsR1.py for llama3 and D
 bash train.sh
 ```
 
-## 🔍 Comparative Analysis:  run DeepseekR1_8B_llama3_instruct_8B_comparing.ipynb to compare the performance
+## 🔍 Comparative Analysis:  
+Run DeepseekR1_8B_llama3_instruct_8B_comparing.ipynb to compare the training performance
+
 | **Metric**          | **DeepSeek-R1 8B** | **LLaMA-3.1 8B** | **Best Choice** |
 |--------------------|------------------|------------------|----------------|
 | **Train Loss**     | Slower convergence | Faster convergence | **LLaMA-3.1 8B** |
