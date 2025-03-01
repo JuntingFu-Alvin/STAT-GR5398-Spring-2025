@@ -2,7 +2,8 @@
 
 ## 📌 Overview
 This project explores **FinGPT-Forecaster**, a state-of-the-art **financial Large Language Model (LLM)**, to assess its effectiveness in **market insights synthesis** and **stock price forecasting**.
-### Medium blog: https://medium.com/@xl3415/fine-tuning-fingpt-enhancing-financial-forecasting-with-llama-3-and-deepseek-r1-2bfd9e5b48d3?source=friends_link&sk=569d0070b90ae8352533422cca46c9dd
+####Medium Blog: [Medium Blog](https://medium.com/@xl3415/fine-tuning-fingpt-enhancing-financial-forecasting-with-llama-3-and-deepseek-r1-2bfd9e5b48d3?source=friends_link&sk=569d0070b90ae8352533422cca46c9dd)
+
 
 We fine-tuned and compared two models:
 - **LLaMA-3.1 8B**
